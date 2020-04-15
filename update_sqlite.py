@@ -19,10 +19,10 @@ def update_task(conn, task):
     conn.commit()
 
 def main():
-    database = r"C:\Users\santo\PycharmProjects\Sqlite\db\pysqlite.db"
+    database = r"db\pysqlite.db"
     conn = create_connection(database)
     with conn:
-        update_task(conn, (2, '2020-02-01', '2020-02-03', 2))
+        update_task(conn, (1, '2020-04-04', '2020-05-01', 12))
 
 if __name__ == '__main__':
     main()

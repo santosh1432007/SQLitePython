@@ -30,13 +30,13 @@ def create_task(conn, task):
    return cur.lastrowid
 
 def main():
-    database = r"C:\Users\santo\PycharmProjects\Sqlite\db\pysqlite.db"
+    database = r"db\pysqlite.db"
 
     # create a database connection
     conn = create_connection(database)
     with conn:
         # Create a new project
-        project = ('App with SQLite & Python', '2020-01-01', '2010-01-30');
+        project = ('SQLite & Python', '2020-01-01', '2010-01-30');
         project_id = create_project(conn, project)
 
         # tasks

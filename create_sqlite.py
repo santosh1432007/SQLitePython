@@ -19,7 +19,7 @@ def create_table(conn, create_sqltable):
         print(e)
 
 def main():
-    database = r"C:\Users\santo\PycharmProjects\Sqlite\db\pysqlite.db"
+    database = r"db\pysqlite.db"
 
     sql_project_table = """CREATE TABLE IF NOT EXISTS projects(
     id integer PRIMARY KEY, name text NOT NULL, begin_date text, end_date text);"""

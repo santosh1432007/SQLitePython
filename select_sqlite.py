@@ -25,7 +25,7 @@ def select_task_by_priority(conn, priority):
         print(row)
 
 def main():
-    database = r"C:\Users\santo\PycharmProjects\Sqlite\db\pysqlite.db"
+    database = r"db\pysqlite.db"
     conn = create_connection(database)
 
     with conn:

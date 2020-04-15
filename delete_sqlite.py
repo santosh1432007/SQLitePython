@@ -24,11 +24,11 @@ def delete_all_tasks(conn):
     conn.commit()
 
 def main():
-    database = r"C:\Users\santo\PycharmProjects\Sqlite\db\pysqlite.db"
+    database = r"db\pysqlite.db"
     conn = create_connection(database)
 
     with conn:
-       delete_task(conn, 1);
+       delete_task(conn, 3);
 
        #delete_all_tasks(conn);
 
